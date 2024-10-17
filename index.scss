@@ -1,0 +1,35 @@
+@use "@visualkit/core/library/kit";
+
+$kit: "progress";
+
+@layer kit {
+  @include kit.set($kit) {
+
+    --progress-margin: 1rem;
+    --progress-size: 480px;
+    --progress-weight: 10px;
+    --progress-fore: var(--color-one);
+    --progress-back: var(--color-black-alpha-2);
+    --progress-radius: 2rem;
+    --progress-transition: 100ms width ease-in-out;
+
+    @include kit.variant($kit, 'bar') {
+      width: calc(100% - (2 * var(--progress-margin)));
+      max-width: var(--progress-size);
+      height: var(--progress-weight);
+      background-color: var(--progress-back);
+      border-radius: var(--progress-radius);
+      margin: var(--progress-margin);
+    }
+
+    @include kit.child($kit, 'track') {
+      max-width: var(--progress-size);
+      min-width: 0;
+      height: 100%;
+      border-radius: inherit;
+      background-color: var(--progress-fore);
+      transition: var(--progress-transition);
+    }
+
+  }
+}
