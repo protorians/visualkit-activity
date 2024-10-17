@@ -1,0 +1,26 @@
+{
+  "name": "@visualkit/progress",
+  "version": "0.0.0",
+  "description": "Visualkit progress",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typing": "npm-dts generate -o ./global.d.ts -c -L debug"
+  },
+  "keywords": [
+    "protorians",
+    "visualkit",
+    "progress"
+  ],
+  "author": "Y. Yannick GOBOU",
+  "repository": {
+    "url": "https://github.com/protorians/visualkit-project.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@protorians/widgets": "^0.0.6",
+    "@visualkit/core": "^0.0.0",
+    "typescript": "5.4.5"
+  }
+}
