@@ -2,11 +2,16 @@
   "name": "@visualkit/progress",
   "version": "0.0.0",
   "description": "Visualkit progress",
-  "main": "index.js",
+  "main": "./build/index.js",
+  "type": "module",
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch",
-    "typing": "npm-dts generate -o ./global.d.ts -c -L debug"
+    "dev": "tsc --watch"
+  },
+  "exports": {
+    "./appearance": "./appearance.scss",
+    "./*": "./build/*",
+    ".": "./build/index.js"
   },
   "keywords": [
     "protorians",
@@ -19,8 +24,8 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@protorians/widgets": "^0.0.6",
-    "@visualkit/core": "^0.0.0",
-    "typescript": "5.4.5"
+    "@protorians/widgets": "^0.0.11",
+    "@visualkit/core": "link:/Users/iancarter/Works/Projects/Protorians/visualkit-project/core",
+    "typescript": "5.6.3"
   }
 }
