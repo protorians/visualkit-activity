@@ -1,7 +1,9 @@
 node_modules
-.github
 .vscode
 .idea
+source
+.github
 *-lock.*
 *.lock
 pnpm-lock.yaml
+tsconfig.json
