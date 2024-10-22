@@ -16,17 +16,18 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "noEmit": true,
+    "noEmit": false,
     "experimentalDecorators": true,
-
-    "outDir": "./",
+    "rootDir": "./source",
+    "outDir": "./build",
     "esModuleInterop": true,
     "strict": true
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "./build"
   ],
   "include": [
-    "./"
+    "./source"
   ]
 }
